@@ -27,6 +27,11 @@ class Database
         return $this;
     }
 
+    public function find()
+    {
+        return $this->stmt->fetch();
+    }
+
     public function findOrAbort()
     {
         $result = $this->find();
@@ -38,8 +43,4 @@ class Database
         return $result;
     }
 
-    public function find()
-    {
-        return $this->stmt->fetchAll();
-    }
 }

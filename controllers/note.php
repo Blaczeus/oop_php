@@ -7,7 +7,7 @@ $db = new Database($config['database']);
 $query = "SELECT * FROM notes WHERE id = :id";
 $note = $db->query($query, ['id' => $_GET['id']])->findOrAbort();
 
-if ($note['user_id'] !== 2) {
+if ($note['user_id'] !== 1) {
     abort(Response::FORBIDDEN);
 }
 

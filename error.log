@@ -163,3 +163,63 @@ Stack trace:
   thrown in C:\xampp\htdocs\oop_php\views\notes.view.php on line 8
 [15-Aug-2023 07:11:03 Africa/Lagos] PHP Warning:  Undefined array key "user_id" in C:\xampp\htdocs\oop_php\controllers\notes.php on line 12
 [15-Aug-2023 07:11:54 Africa/Lagos] PHP Warning:  Undefined array key "user_id" in C:\xampp\htdocs\oop_php\controllers\notes.php on line 12
+[15-Aug-2023 07:38:28 Africa/Lagos] PHP Fatal error:  Uncaught Error: Cannot use object of type Database as array in C:\xampp\htdocs\oop_php\controllers\notes.php:12
+Stack trace:
+#0 C:\xampp\htdocs\oop_php\functions.php(40): require()
+#1 C:\xampp\htdocs\oop_php\router.php(8): reRoute('/notes')
+#2 C:\xampp\htdocs\oop_php\index.php(5): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\oop_php\controllers\notes.php on line 12
+[15-Aug-2023 07:38:50 Africa/Lagos] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\oop_php\views\notes.view.php on line 8
+[15-Aug-2023 07:38:50 Africa/Lagos] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\oop_php\views\notes.view.php on line 9
+[15-Aug-2023 07:38:50 Africa/Lagos] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\oop_php\views\notes.view.php on line 8
+[15-Aug-2023 07:38:50 Africa/Lagos] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\oop_php\views\notes.view.php on line 9
+[15-Aug-2023 07:38:50 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\oop_php\views\notes.view.php:8
+Stack trace:
+#0 C:\xampp\htdocs\oop_php\controllers\notes.php(14): require()
+#1 C:\xampp\htdocs\oop_php\functions.php(40): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\oop_php\router.php(8): reRoute('/notes')
+#3 C:\xampp\htdocs\oop_php\index.php(5): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\oop_php\views\notes.view.php on line 8
+[15-Aug-2023 07:39:00 Africa/Lagos] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\oop_php\views\notes.view.php on line 8
+[15-Aug-2023 07:39:00 Africa/Lagos] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\oop_php\views\notes.view.php on line 9
+[15-Aug-2023 07:39:00 Africa/Lagos] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\oop_php\views\notes.view.php on line 8
+[15-Aug-2023 07:39:00 Africa/Lagos] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\oop_php\views\notes.view.php on line 9
+[15-Aug-2023 07:39:00 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\oop_php\views\notes.view.php:8
+Stack trace:
+#0 C:\xampp\htdocs\oop_php\controllers\notes.php(14): require()
+#1 C:\xampp\htdocs\oop_php\functions.php(40): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\oop_php\router.php(8): reRoute('/notes')
+#3 C:\xampp\htdocs\oop_php\index.php(5): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\oop_php\views\notes.view.php on line 8
+[15-Aug-2023 07:39:20 Africa/Lagos] PHP Warning:  Undefined array key "user_id" in C:\xampp\htdocs\oop_php\controllers\notes.php on line 12
+[15-Aug-2023 07:39:58 Africa/Lagos] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\oop_php\views\notes.view.php on line 8
+[15-Aug-2023 07:39:58 Africa/Lagos] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\oop_php\views\notes.view.php on line 9
+[15-Aug-2023 07:39:58 Africa/Lagos] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\oop_php\views\notes.view.php on line 8
+[15-Aug-2023 07:39:58 Africa/Lagos] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\oop_php\views\notes.view.php on line 9
+[15-Aug-2023 07:39:58 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\oop_php\views\notes.view.php:8
+Stack trace:
+#0 C:\xampp\htdocs\oop_php\controllers\notes.php(14): require()
+#1 C:\xampp\htdocs\oop_php\functions.php(40): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\oop_php\router.php(8): reRoute('/notes')
+#3 C:\xampp\htdocs\oop_php\index.php(5): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\oop_php\views\notes.view.php on line 8
+[15-Aug-2023 07:40:18 Africa/Lagos] PHP Warning:  Undefined array key "user_id" in C:\xampp\htdocs\oop_php\controllers\notes.php on line 12
+[15-Aug-2023 07:40:31 Africa/Lagos] PHP Warning:  Undefined array key "user_id" in C:\xampp\htdocs\oop_php\controllers\note.php on line 10
+[15-Aug-2023 07:41:40 Africa/Lagos] PHP Warning:  Undefined array key "user_id" in C:\xampp\htdocs\oop_php\controllers\note.php on line 10
+[15-Aug-2023 07:41:41 Africa/Lagos] PHP Warning:  Undefined array key "user_id" in C:\xampp\htdocs\oop_php\controllers\note.php on line 10
+[15-Aug-2023 07:42:44 Africa/Lagos] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\oop_php\views\notes.view.php on line 8
+[15-Aug-2023 07:42:44 Africa/Lagos] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\oop_php\views\notes.view.php on line 9
+[15-Aug-2023 07:42:44 Africa/Lagos] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\oop_php\views\notes.view.php on line 8
+[15-Aug-2023 07:42:44 Africa/Lagos] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\oop_php\views\notes.view.php on line 9
+[15-Aug-2023 07:42:44 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\oop_php\views\notes.view.php:8
+Stack trace:
+#0 C:\xampp\htdocs\oop_php\controllers\notes.php(14): require()
+#1 C:\xampp\htdocs\oop_php\functions.php(40): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\oop_php\router.php(8): reRoute('/notes')
+#3 C:\xampp\htdocs\oop_php\index.php(5): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\oop_php\views\notes.view.php on line 8
