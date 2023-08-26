@@ -1,0 +1,149 @@
+[25-Aug-2023 19:11:53 Africa/Lagos] PHP Warning:  The use statement with non-compound name 'Database' has no effect in C:\xampp\htdocs\oop_php\controllers\notes\index.php on line 3
+[25-Aug-2023 19:11:53 Africa/Lagos] PHP Warning:  require(C:\xampp\htdocs\oop_php\public/../Core/Databasephp): Failed to open stream: No such file or directory in C:\xampp\htdocs\oop_php\public\index.php on line 8
+[25-Aug-2023 19:11:53 Africa/Lagos] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\oop_php\public/../Core/Databasephp' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\oop_php\public\index.php:8
+Stack trace:
+#0 C:\xampp\htdocs\oop_php\controllers\notes\index.php(8): {closure}('Database')
+#1 C:\xampp\htdocs\oop_php\functions.php(33): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\oop_php\router.php(8): reRoute('/notes')
+#3 C:\xampp\htdocs\oop_php\public\index.php(11): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\oop_php\public\index.php on line 8
+[25-Aug-2023 19:12:10 Africa/Lagos] PHP Warning:  require(C:\xampp\htdocs\oop_php\public/../Core/Databasephp): Failed to open stream: No such file or directory in C:\xampp\htdocs\oop_php\public\index.php on line 8
+[25-Aug-2023 19:12:10 Africa/Lagos] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\oop_php\public/../Core/Databasephp' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\oop_php\public\index.php:8
+Stack trace:
+#0 C:\xampp\htdocs\oop_php\controllers\notes\index.php(6): {closure}('Database')
+#1 C:\xampp\htdocs\oop_php\functions.php(33): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\oop_php\router.php(8): reRoute('/notes')
+#3 C:\xampp\htdocs\oop_php\public\index.php(11): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\oop_php\public\index.php on line 8
+[25-Aug-2023 19:13:10 Africa/Lagos] PHP Warning:  The use statement with non-compound name 'Database' has no effect in C:\xampp\htdocs\oop_php\controllers\notes\show.php on line 3
+[25-Aug-2023 19:30:15 Africa/Lagos] PHP Warning:  require(C:\xampp\htdocs\oop_php\public/../router.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\oop_php\public\index.php on line 11
+[25-Aug-2023 19:30:15 Africa/Lagos] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\oop_php\public/../router.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\oop_php\public\index.php:11
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\oop_php\public\index.php on line 11
+[25-Aug-2023 19:30:19 Africa/Lagos] PHP Warning:  require(C:\xampp\htdocs\oop_php\public/../router.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\oop_php\public\index.php on line 11
+[25-Aug-2023 19:30:19 Africa/Lagos] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\oop_php\public/../router.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\oop_php\public\index.php:11
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\oop_php\public\index.php on line 11
+[25-Aug-2023 19:30:41 Africa/Lagos] PHP Warning:  require(routes.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\oop_php\Core\functions.php on line 30
+[25-Aug-2023 19:30:41 Africa/Lagos] PHP Fatal error:  Uncaught Error: Failed opening required 'routes.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\oop_php\Core\functions.php:30
+Stack trace:
+#0 C:\xampp\htdocs\oop_php\Core\router.php(8): reRoute('/')
+#1 C:\xampp\htdocs\oop_php\public\index.php(11): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\oop_php\Core\functions.php on line 30
+[25-Aug-2023 19:32:31 Africa/Lagos] PHP Warning:  require(controllers/index.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\oop_php\Core\functions.php on line 33
+[25-Aug-2023 19:32:31 Africa/Lagos] PHP Fatal error:  Uncaught Error: Failed opening required 'controllers/index.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\oop_php\Core\functions.php:33
+Stack trace:
+#0 C:\xampp\htdocs\oop_php\Core\router.php(8): reRoute('/')
+#1 C:\xampp\htdocs\oop_php\public\index.php(11): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\oop_php\Core\functions.php on line 33
+[25-Aug-2023 19:32:51 Africa/Lagos] PHP Warning:  require(controllers/index.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\oop_php\Core\functions.php on line 33
+[25-Aug-2023 19:32:51 Africa/Lagos] PHP Fatal error:  Uncaught Error: Failed opening required 'controllers/index.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\oop_php\Core\functions.php:33
+Stack trace:
+#0 C:\xampp\htdocs\oop_php\Core\router.php(8): reRoute('/')
+#1 C:\xampp\htdocs\oop_php\public\index.php(11): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\oop_php\Core\functions.php on line 33
+[25-Aug-2023 19:32:52 Africa/Lagos] PHP Warning:  require(controllers/index.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\oop_php\Core\functions.php on line 33
+[25-Aug-2023 19:32:52 Africa/Lagos] PHP Fatal error:  Uncaught Error: Failed opening required 'controllers/index.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\oop_php\Core\functions.php:33
+Stack trace:
+#0 C:\xampp\htdocs\oop_php\Core\router.php(8): reRoute('/')
+#1 C:\xampp\htdocs\oop_php\public\index.php(11): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\oop_php\Core\functions.php on line 33
+[25-Aug-2023 19:45:28 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: Cannot assign PDOStatement to property Database::$stmt of type string in C:\xampp\htdocs\oop_php\Core\Database.php:25
+Stack trace:
+#0 C:\xampp\htdocs\oop_php\controllers\notes\index.php(9): Database->query('SELECT * FROM n...', Array)
+#1 C:\xampp\htdocs\oop_php\Core\functions.php(33): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\oop_php\Core\router.php(8): reRoute('/notes')
+#3 C:\xampp\htdocs\oop_php\public\index.php(11): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\oop_php\Core\Database.php on line 25
+[25-Aug-2023 19:45:35 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: Cannot assign PDOStatement to property Database::$stmt of type string in C:\xampp\htdocs\oop_php\Core\Database.php:25
+Stack trace:
+#0 C:\xampp\htdocs\oop_php\controllers\notes\index.php(9): Database->query('SELECT * FROM n...', Array)
+#1 C:\xampp\htdocs\oop_php\Core\functions.php(33): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\oop_php\Core\router.php(8): reRoute('/notes')
+#3 C:\xampp\htdocs\oop_php\public\index.php(11): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\oop_php\Core\Database.php on line 25
+[25-Aug-2023 19:45:37 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: Cannot assign PDOStatement to property Database::$stmt of type string in C:\xampp\htdocs\oop_php\Core\Database.php:25
+Stack trace:
+#0 C:\xampp\htdocs\oop_php\controllers\notes\index.php(9): Database->query('SELECT * FROM n...', Array)
+#1 C:\xampp\htdocs\oop_php\Core\functions.php(33): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\oop_php\Core\router.php(8): reRoute('/notes')
+#3 C:\xampp\htdocs\oop_php\public\index.php(11): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\oop_php\Core\Database.php on line 25
+[25-Aug-2023 19:48:20 Africa/Lagos] PHP Fatal error:  Uncaught Error: Class "Database" not found in C:\xampp\htdocs\oop_php\controllers\notes\index.php:6
+Stack trace:
+#0 C:\xampp\htdocs\oop_php\Core\functions.php(33): require()
+#1 C:\xampp\htdocs\oop_php\Core\router.php(8): reRoute('/notes')
+#2 C:\xampp\htdocs\oop_php\public\index.php(11): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\oop_php\controllers\notes\index.php on line 6
+[25-Aug-2023 19:48:43 Africa/Lagos] PHP Fatal error:  Uncaught Error: Class "Database" not found in C:\xampp\htdocs\oop_php\controllers\notes\index.php:6
+Stack trace:
+#0 C:\xampp\htdocs\oop_php\Core\functions.php(34): require()
+#1 C:\xampp\htdocs\oop_php\Core\router.php(8): reRoute('/notes')
+#2 C:\xampp\htdocs\oop_php\public\index.php(11): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\oop_php\controllers\notes\index.php on line 6
+[25-Aug-2023 19:48:45 Africa/Lagos] PHP Fatal error:  Uncaught Error: Class "Database" not found in C:\xampp\htdocs\oop_php\controllers\notes\index.php:6
+Stack trace:
+#0 C:\xampp\htdocs\oop_php\Core\functions.php(34): require()
+#1 C:\xampp\htdocs\oop_php\Core\router.php(8): reRoute('/notes')
+#2 C:\xampp\htdocs\oop_php\public\index.php(11): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\oop_php\controllers\notes\index.php on line 6
+[25-Aug-2023 19:49:39 Africa/Lagos] PHP Warning:  require(C:\xampp\htdocs\oop_php\public/../Core/Core\Database.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\oop_php\public\index.php on line 8
+[25-Aug-2023 19:49:39 Africa/Lagos] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\oop_php\public/../Core/Core\Database.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\oop_php\public\index.php:8
+Stack trace:
+#0 C:\xampp\htdocs\oop_php\controllers\notes\index.php(8): {closure}('Core\\Database')
+#1 C:\xampp\htdocs\oop_php\Core\functions.php(34): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\oop_php\Core\router.php(8): reRoute('/notes')
+#3 C:\xampp\htdocs\oop_php\public\index.php(11): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\oop_php\public\index.php on line 8
+[25-Aug-2023 19:51:03 Africa/Lagos] PHP Warning:  require(C:\xampp\htdocs\oop_php\public/../Database.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\oop_php\public\index.php on line 9
+[25-Aug-2023 19:51:03 Africa/Lagos] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\oop_php\public/../Database.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\oop_php\public\index.php:9
+Stack trace:
+#0 C:\xampp\htdocs\oop_php\controllers\notes\show.php(6): {closure}('Database')
+#1 C:\xampp\htdocs\oop_php\Core\functions.php(34): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\oop_php\Core\router.php(8): reRoute('/note')
+#3 C:\xampp\htdocs\oop_php\public\index.php(12): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\oop_php\public\index.php on line 9
+[25-Aug-2023 19:52:05 Africa/Lagos] PHP Warning:  require(C:\xampp\htdocs\oop_php\public/../Database.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\oop_php\public\index.php on line 9
+[25-Aug-2023 19:52:05 Africa/Lagos] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\oop_php\public/../Database.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\oop_php\public\index.php:9
+Stack trace:
+#0 C:\xampp\htdocs\oop_php\controllers\notes\show.php(6): {closure}('Database')
+#1 C:\xampp\htdocs\oop_php\Core\functions.php(34): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\oop_php\Core\router.php(8): reRoute('/note')
+#3 C:\xampp\htdocs\oop_php\public\index.php(12): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\oop_php\public\index.php on line 9
+[25-Aug-2023 19:52:06 Africa/Lagos] PHP Warning:  require(C:\xampp\htdocs\oop_php\public/../Database.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\oop_php\public\index.php on line 9
+[25-Aug-2023 19:52:06 Africa/Lagos] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\oop_php\public/../Database.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\oop_php\public\index.php:9
+Stack trace:
+#0 C:\xampp\htdocs\oop_php\controllers\notes\show.php(6): {closure}('Database')
+#1 C:\xampp\htdocs\oop_php\Core\functions.php(34): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\oop_php\Core\router.php(8): reRoute('/note')
+#3 C:\xampp\htdocs\oop_php\public\index.php(12): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\oop_php\public\index.php on line 9
+[26-Aug-2023 06:24:07 Africa/Lagos] PHP Warning:  require(templates/header.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\oop_php\views\notes\show.view.php on line 1
+[26-Aug-2023 06:24:07 Africa/Lagos] PHP Fatal error:  Uncaught Error: Failed opening required 'templates/header.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\oop_php\views\notes\show.view.php:1
+Stack trace:
+#0 C:\xampp\htdocs\oop_php\Core\functions.php(55): require()
+#1 C:\xampp\htdocs\oop_php\controllers\notes\show.php(17): view('notes/show.view...', Array)
+#2 C:\xampp\htdocs\oop_php\Core\functions.php(34): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\oop_php\Core\router.php(8): reRoute('/note')
+#4 C:\xampp\htdocs\oop_php\public\index.php(12): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\oop_php\views\notes\show.view.php on line 1

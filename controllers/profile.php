@@ -1,4 +1,5 @@
 <?php
-$heading = "Profile";
 
-require "views/profile.view.php";
+view("profile.view.php", [
+    'heading' => 'Profile',
+]);

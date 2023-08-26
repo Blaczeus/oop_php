@@ -3,21 +3,21 @@
         <div class="flex h-16 items-center justify-between">
             <div class="flex items-center">
                 <div class="flex-shrink-0">
-                    <img class="h-8 w-8" src="assets/img/mark.svg" alt="Your Company">
+                    <img class="h-8 w-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
 
-                        <a href="/oop_php/"
-                           class="<?= urlIs("/oop_php/") ?>  hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                        <a href="/"
+                           class="<?= urlIs("/") ?>  hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                            aria-current="page">Dashboard</a>
-                        <a href="/oop_php/about"
-                           class="<?= urlIs("/oop_php/about") ?> hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</a>
-                        <a href="/oop_php/notes"
-                           class="<?= urlIs("/oop_php/notes") ?> hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Notes</a>
-                        <a href="/oop_php/contact"
-                           class="<?= urlIs("/oop_php/contact") ?> hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact</a>
+                        <a href="/about"
+                           class="<?= urlIs("/about") ?> hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</a>
+                        <a href="/notes"
+                           class="<?= urlIs("/notes") ?> hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Notes</a>
+                        <a href="/contact"
+                           class="<?= urlIs("/contact") ?> hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact</a>
                     </div>
                 </div>
             </div>
@@ -80,12 +80,12 @@
                             </div>
                             <a href="#"
                                class="block rounded-md px-3 py-2 text-base font-small text-gray-300 hover:bg-white hover:text-gray-900">Your
-                                Profile</a>
-                            <a href="/oop_php/profile"
-                               class=" <?= urlIs("/oop_php/profile") ?> block rounded-md px-3 py-2 text-base font-small text-gray-300 hover:bg-white hover:text-gray-900">Settings</a>
+                                                                                                                                        Profile</a>
+                            <a href="/profile"
+                               class=" <?= urlIs("/profile") ?> block rounded-md px-3 py-2 text-base font-small text-gray-300 hover:bg-white hover:text-gray-900">Settings</a>
                             <a href="#"
                                class="block rounded-md px-3 py-2 text-base font-small text-gray-300 hover:bg-white hover:text-gray-900">Sign
-                                out</a>
+                                                                                                                                        out</a>
                         </div>
                     </div>
                 </div>
@@ -153,12 +153,12 @@
             <div class="mt-3 space-y-1 px-2">
                 <a href="#"
                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Your
-                    Profile</a>
+                                                                                                                             Profile</a>
                 <a href="#"
                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Settings</a>
                 <a href="#"
                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Sign
-                    out</a>
+                                                                                                                             out</a>
             </div>
         </div>
     </div>

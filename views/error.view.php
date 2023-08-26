@@ -147,7 +147,7 @@ CSS;
     </style>
     <main class="page-wrapper">
         <!-- Page content -->
-        <section class="container d-flex flex-column h-100 align-items-center position-relative zindex-5 pt-5">
+        <section class="container d-flex flex-column h-100 align-items-center position-relative z-index-5 pt-5">
             <div class="text-center pt-5 pb-3 mt-auto">
                 <div class="pg-content">
                     <h1 class="error-code"><?= $errcode ?></h1>
@@ -161,7 +161,7 @@ CSS;
                         <p class="error2-info" style="font-style: italic;">
                             <?= $errContent; ?>
                         </p>
-                        <a class="back-link" href="/oop_php/notes">Back</a>
+                        <a class="back-link" href="/notes">Back</a>
                     </div>
                 </div>
             </div>
