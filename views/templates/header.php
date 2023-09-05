@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="h-full bg-gray-100">
 
 <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
@@ -15,10 +15,10 @@
     <meta name="theme-color" content="#ffffff">
     <!-- Vendor Styles -->
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css" media="screen" rel="stylesheet">
-
-    <!-- Main Theme Styles + Bootstrap -->
-    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
-    <!-- Theme mode -->
+   <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="../../assets/css/theme.min.css">
+    <!-- Sweetalert mode -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body class="h-full">

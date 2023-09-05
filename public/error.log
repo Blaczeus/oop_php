@@ -147,3 +147,33 @@ Stack trace:
 #4 C:\xampp\htdocs\oop_php\public\index.php(12): require('C:\\xampp\\htdocs...')
 #5 {main}
   thrown in C:\xampp\htdocs\oop_php\views\notes\show.view.php on line 1
+[27-Aug-2023 05:33:04 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* FROM notes WHERE id = '3'' at line 1 in C:\xampp\htdocs\oop_php\Core\Database.php:31
+Stack trace:
+#0 C:\xampp\htdocs\oop_php\Core\Database.php(31): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\oop_php\controllers\notes\show.php(16): Core\Database->query('DELETE * FROM n...', Array)
+#2 C:\xampp\htdocs\oop_php\Core\functions.php(34): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\oop_php\Core\router.php(8): reRoute('/note')
+#4 C:\xampp\htdocs\oop_php\public\index.php(12): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\oop_php\Core\Database.php on line 31
+[28-Aug-2023 13:11:35 Africa/Lagos] PHP Warning:  Undefined variable $note in C:\xampp\htdocs\oop_php\controllers\notes\show.php on line 31
+[28-Aug-2023 13:11:35 Africa/Lagos] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\oop_php\views\notes\show.view.php on line 8
+[28-Aug-2023 13:11:35 Africa/Lagos] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\oop_php\views\notes\show.view.php on line 12
+[28-Aug-2023 13:11:53 Africa/Lagos] PHP Warning:  Undefined variable $note in C:\xampp\htdocs\oop_php\controllers\notes\show.php on line 31
+[28-Aug-2023 13:11:53 Africa/Lagos] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\oop_php\views\notes\show.view.php on line 8
+[28-Aug-2023 13:11:53 Africa/Lagos] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\oop_php\views\notes\show.view.php on line 12
+[28-Aug-2023 13:12:01 Africa/Lagos] PHP Warning:  Undefined variable $note in C:\xampp\htdocs\oop_php\controllers\notes\show.php on line 31
+[28-Aug-2023 13:12:01 Africa/Lagos] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\oop_php\views\notes\show.view.php on line 8
+[28-Aug-2023 13:12:01 Africa/Lagos] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\oop_php\views\notes\show.view.php on line 12
+[28-Aug-2023 13:20:59 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: Core\Database::delete(): Return value must be of type int, PDOStatement returned in C:\xampp\htdocs\oop_php\Core\Database.php:38
+Stack trace:
+#0 C:\xampp\htdocs\oop_php\controllers\notes\show.php(19): Core\Database->delete()
+#1 C:\xampp\htdocs\oop_php\Core\functions.php(34): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\oop_php\Core\router.php(8): reRoute('/note')
+#3 C:\xampp\htdocs\oop_php\public\index.php(12): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\oop_php\Core\Database.php on line 38
+[28-Aug-2023 13:26:00 Africa/Lagos] PHP Notice:  Object of class Core\Database could not be converted to int in C:\xampp\htdocs\oop_php\controllers\notes\show.php on line 21
+[28-Aug-2023 17:21:42 Africa/Lagos] PHP Notice:  Object of class Core\Database could not be converted to int in C:\xampp\htdocs\oop_php\controllers\notes\show.php on line 21
+[28-Aug-2023 17:21:45 Africa/Lagos] PHP Notice:  Object of class Core\Database could not be converted to int in C:\xampp\htdocs\oop_php\controllers\notes\show.php on line 21
+[28-Aug-2023 17:21:47 Africa/Lagos] PHP Notice:  Object of class Core\Database could not be converted to int in C:\xampp\htdocs\oop_php\controllers\notes\show.php on line 21

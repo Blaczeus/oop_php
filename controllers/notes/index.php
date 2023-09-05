@@ -1,11 +1,11 @@
 <?php
 
+use Core\App;
 use Core\Database;
 
-$currentUserId = 2;
+$db = App::resolve(Database::class);
 
-$config = require base_path('config.php');
-$db = new Database($config['database']);
+$currentUserId = 2;
 
 $query = "SELECT * FROM notes WHERE user_id = :user_id";
 $notes = $db->query($query, ['user_id' => $currentUserId])->findAllOrAbort();
