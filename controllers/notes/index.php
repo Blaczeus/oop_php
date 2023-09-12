@@ -3,6 +3,7 @@
 use Core\App;
 use Core\Database;
 
+/** @var \Core\Database $db */
 $db = App::resolve(Database::class);
 
 $currentUserId = 2;

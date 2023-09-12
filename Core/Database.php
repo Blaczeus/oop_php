@@ -43,16 +43,6 @@ class Database
         return $this->stmt->fetchAll();
     }
 
-    public function findOrFail()
-        {
-            $result = $this->find();
-
-            if (! $result) {
-                abort(Response::PAGE_NOT_FOUND);
-            }
-
-            return $result;
-        }
 
     public function findOrAbort()
     {
@@ -75,6 +65,4 @@ class Database
 
         return $result;
     }
-
-
 }

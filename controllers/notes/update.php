@@ -4,7 +4,8 @@ use Core\App;
 use Core\Database;
 use Core\Validator;
 
-$db = App::resolve( 'Core/Database');
+/** @var \Core\Database $db */
+$db = App::resolve(Database::class);
 
 $user_id = 2;
 
@@ -30,9 +31,7 @@ if (count($errors) > 0) {
 
 // if no validation errors, update the record in the notes database table.
 $query1 = "UPDATE notes SET title = :title, body = :body WHERE id = :id";
-$note = $db->query($query1, ['id' => $_POST['id'],
-    'title' => $title,
-    'body' => $_POST['body']])->findOrAbort();
+$db->query($query1, ['id' => $_POST['id'], 'title' => $title, 'body' => $_POST['body']]);
 
 // redirect the user
 header('location: /notes');
