@@ -11,58 +11,16 @@
             <form class="space-y-6" action="/login" method="POST">
                 <div class="mb-4">
                     <div class="relative">
-                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                            <span class="text-gray-800" id="email-prefix">@</span>
-                        </div>
-                        <input id="username" name="username" type="text" placeholder="Username" value="<?= $_POST['username'] ?? '' ?>" autocomplete="given name" class="block w-full pl-10 pr-3 py-2 border-0 rounded-md text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" required>
-                        <div class="error mt-3">
-                            <?php
-                            if (!empty($errors['username'])) {
-                                echo '<div class="error-content" style="display: flex; align-items: center;">
-                                    <div class="icon-container">
-                                        <svg width="1.25em" height="1.25em" viewBox="0 0 16 16" class="m-1 bi bi-exclamation-circle-fill" fill="red" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
-                                        </svg>
-                                    </div>
-                                    <div class="message-container" style="margin-left: 10px;">
-                                        <strong style="color: red; font-size: small; font-family: cursive">' . $errors['username'] . '</strong>
-                                    </div>
-                                </div>';
-                            } else {
-                                echo '';
-                            }
-                            ?>
-                        </div>
+                        <input id="username" name="username" type="text" placeholder="Username" value="<?= old('username'); ?>" autocomplete="given name" class="block w-full py-2 border-0 rounded-md text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" required>
                     </div>
                 </div>
-
-<!--                <div class="mb-4">-->
-<!--                    <input id="email" name="email" type="email" placeholder="Email address" autocomplete="email" value="--><?php //= $_POST['email'] ?? '' ?><!--" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" required>-->
-<!--                    <div class="error mt-3">-->
-<!--                        --><?php
-//                        if (!empty($errors['email'])) {
-//                            echo '<div class="error-content" style="display: flex; align-items: center;">
-//                                    <div class="icon-container">
-//                                        <svg width="1.25em" height="1.25em" viewBox="0 0 16 16" class="m-1 bi bi-exclamation-circle-fill" fill="red" xmlns="http://www.w3.org/2000/svg">
-//                                            <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
-//                                        </svg>
-//                                    </div>
-//                                    <div class="message-container" style="margin-left: 10px;">
-//                                        <strong style="color: red; font-size: small; font-family: cursive">' . $errors['email'] . '</strong>
-//                                    </div>
-//                                </div>';
-//                        } else {
-//                            echo '';
-//                        }
-//                        ?>
-<!--                    </div>-->
-<!--                </div>-->
-
                 <div class="mb-4">
-                    <input id="password" name="password" type="password" placeholder="Password" autocomplete="current-password" value="<?= $_POST['password'] ?? '' ?>" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" required>
+                    <input id="password" name="password" type="password" placeholder="Password" autocomplete="current-password" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" required>
+                </div>
+                <div class="mb-4">
                     <div class="error mt-3">
                         <?php
-                        if (!empty($errors['password'])) {
+                        if (!empty($errors['authentication'])) {
                             echo '<div class="error-content" style="display: flex; align-items: center;">
                                     <div class="icon-container">
                                         <svg width="1.25em" height="1.25em" viewBox="0 0 16 16" class="m-1 bi bi-exclamation-circle-fill" fill="red" xmlns="http://www.w3.org/2000/svg">
@@ -70,7 +28,8 @@
                                         </svg>
                                     </div>
                                     <div class="message-container" style="margin-left: 10px;">
-                                        <strong style="color: red; font-size: small; font-family: cursive">' . $errors['password'] . '</strong>
+                                        <strong style="color: red; font-size: small; font-family: cursive">' .
+                                $errors['authentication'] . '</strong>
                                     </div>
                                 </div>';
                         } else {
@@ -90,9 +49,10 @@
 
 
             <p class="mt-10 text-center text-sm text-gray-500">
-                Don't have an Account?
-                <a href="#" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Create your
-                    account</a>
+                Can't remember your password?
+                <a href="#" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Reset
+                    your
+                    password</a>
             </p>
         </div>
     </div>

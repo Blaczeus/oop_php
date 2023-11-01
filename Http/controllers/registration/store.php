@@ -1,6 +1,7 @@
 <?php
 
 use Core\App;
+use Core\Authenticator;
 use Core\Database;
 use Core\Validator;
 
@@ -22,20 +23,20 @@ if (isset($_POST['register'])) {
     // dd($errors);
 
     $db = App::resolve(Database::class);
-    $usernameExists = Validator::checkUsername($username, $db);
-    $emailExists = Validator::checkEmail($email, $db);
+    $usernameExists = Validator::checkUsername($username);
+    $emailExists = Validator::checkEmail($email);
 
     if ($usernameExists) {
         $errors['username'] = "A user with that username already exists";
         return view("registration/create.view.php", [
             'errors' => $errors,
         ]);
-    }elseif ($emailExists) {
+    } elseif ($emailExists) {
         $errors['email'] = "A user with that email already exists";
         return view("registration/create.view.php", [
             'errors' => $errors,
         ]);
-    }else {
+    } else {
         $reg = "INSERT INTO users (fname, lname, username, email, password, cpassword) VALUES (:fname, :lname, :username, :email, :password, :cpassword)";
         $params = [
             'fname' => $fname,
@@ -48,18 +49,19 @@ if (isset($_POST['register'])) {
         $db->query($reg, $params);
         $lastUserId = $db->conn->lastInsertId();
 
-        session('logged_in', true);
+        $auth = new Authenticator();
+
+        $auth->login('logged_in', true);
         $user = [
             'id'        => $lastUserId,
-            'fname'     =>$fname,
-            'lname'     =>$lname,
+            'fname'     => $fname,
+            'lname'     => $lname,
             'username'  => $username,
             'email'     => $email
         ];
-        session('user', $user);
+        $auth->login('user', $user);
 
 
-        header('location: /');
-        exit();
+        redirect('/');
     }
 }

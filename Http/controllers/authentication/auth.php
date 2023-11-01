@@ -1,27 +1,29 @@
 <?php
 
-use Core\App;
-use Core\Database;
-use Core\Validator;
+use Core\Authenticator;
+use Core\Session;
+use Http\Forms\LoginForm;
 
 
 if (isset($_POST['login'])) {
-    $errors = [];
 
-    $db = App::resolve(Database::class);
-    $authResult = Validator::login($_POST['username'], $_POST['password'], $errors, $db);
+    $form = new LoginForm();
 
-    if (!empty($errors)) {
-        return view("authentication/login.view.php", [
-            'errors' => $errors,
-        ]);
+    if ($form->validate($_POST['username'], $_POST['password'])) {
+        $auth = new Authenticator($form);
+        if ($auth->attempt()) {
+
+            $auth->login('logged_in', true);
+            $auth->login('user', $auth->getUserData());
+
+            redirect('/');
+        }
     }
 
-    if ($authResult !== false) {
-        session('user', $authResult);
-        session('logged_in', true);
+    Session::flash('errors', $form->getErrors());
+    Session::flash('old', [
+        'username' => $_POST['username']
+    ]);
 
-        header('location: /');
-        exit();
-    }
+    return redirect('/login');
 }

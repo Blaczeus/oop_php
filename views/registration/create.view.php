@@ -56,10 +56,7 @@
 
                 <div class="mb-4">
                     <div class="relative">
-                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                            <span class="text-gray-800" id="email-prefix">@</span>
-                        </div>
-                        <input id="username" name="username" type="text" placeholder="Username" value="<?= $_POST['username'] ?? '' ?>" autocomplete="given name" class="block w-full pl-10 pr-3 py-2 border-0 rounded-md text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" required>
+                        <input id="username" name="username" type="text" placeholder="Username" value="<?= $_POST['username'] ?? '' ?>" autocomplete="given name" class="block w-full py-2 border-0 rounded-md text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" required>
                         <div class="error mt-3">
                             <?php
                             if (!empty($errors['username'])) {
@@ -133,7 +130,8 @@
 
             <p class="mt-10 text-center text-sm text-gray-500">
                 Already a member?
-                <a href="#" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Sign in to your account</a>
+                <a href="/login" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Sign in to your
+                    account</a>
             </p>
         </div>
     </div>

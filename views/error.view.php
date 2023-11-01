@@ -161,7 +161,7 @@ CSS;
                         <p class="error2-info" style="font-style: italic;">
                             <?= $errContent; ?>
                         </p>
-                        <a class="back-link" href="/notes">Back</a>
+                        <a class="back-link" href="/">Go Home</a>
                     </div>
                 </div>
             </div>

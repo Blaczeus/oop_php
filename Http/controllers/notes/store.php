@@ -12,8 +12,7 @@ $messages = [];
 
 if (isset($_POST['cancel'])) {
     $_POST = []; // Clear form data
-    header('Location: /notes');
-    die();
+    redirect('/notes');
 }
 
 $user_id = $_SESSION['user']['id'];
@@ -41,7 +40,6 @@ if ($db->query($sql, $params)) {
     $errors[] = "Failed to create note. Please try again.";
 }
 
-header('Location: /notes');
-die();
+redirect('/notes');
 
 
