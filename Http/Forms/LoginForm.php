@@ -20,8 +20,8 @@ class LoginForm
         $this->errors[$field] = $message;
     }
     
-	public function getData($key = null) {
-		return $this->data[$key];
+	public function getData() {
+		return $this->data;
 	}
 
     public function validate($username, $password)
