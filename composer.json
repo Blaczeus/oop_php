@@ -1,15 +1,26 @@
 {
-  "name": "vendor_name/oop_php",
-  "description": "description",
-  "minimum-stability": "stable",
-  "license": "proprietary",
+  "name": "user/oop_php",
   "authors": [
     {
-      "name": "user",
-      "email": "email@example.com"
+      "name": "Anya Chidiebere",
+      "email": "anyachidiebere029@gmail.com"
     }
   ],
   "require": {
-    "ext-pdo": "*"
+    "illuminate/collections": "^10.31"
+  },
+  "autoload": {
+    "psr-4": {
+      "Core\\": "Core/",
+      "Http\\": "Http/"
+    }
+  },
+  "require-dev": {
+    "pestphp/pest": "^2.24"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
   }
 }
