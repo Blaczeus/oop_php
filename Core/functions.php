@@ -1,7 +1,6 @@
 <?php /** @noinspection ALL */
 
 use Core\Response;
-use JetBrains\PhpStorm\NoReturn;
 
 function dd($value)
 {
@@ -17,7 +16,7 @@ function urlIs($value): string
     return $_SERVER['REQUEST_URI'] === $value ? "bg-gray-900 text-white" : "text-gray-300";
 }
 
-function abort($Response): void
+function abortAction($Response): void
 {
     http_response_code($Response['code']);
     $errcode = $Response['code'];
@@ -30,7 +29,7 @@ function abort($Response): void
 function authorize($condition, $status = Response::FORBIDDEN): void
 {
     if (!$condition) {
-        abort($status);
+        abortAction($status);
     }
 }
 

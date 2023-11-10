@@ -20,23 +20,24 @@
                 <div class="mb-4">
                     <div class="error mt-3">
                         <?php
-                        if (!empty($errors['authentication'])) {
-                            echo '<div class="error-content" style="display: flex; align-items: center;">
-                                    <div class="icon-container">
-                                        <svg width="1.25em" height="1.25em" viewBox="0 0 16 16" class="m-1 bi bi-exclamation-circle-fill" fill="red" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
-                                        </svg>
-                                    </div>
-                                    <div class="message-container" style="margin-left: 10px;">
-                                        <strong style="color: red; font-size: small; font-family: cursive">' .
-                                $errors['authentication'] . '</strong>
-                                    </div>
-                                </div>';
-                        } else {
-                            echo '';
+                        if (isset($errors)) {
+                            foreach ($errors as $field => $error) {
+                                echo '<div class="error-content" style="display: flex; align-items: center;">
+                                        <div class="icon-container">
+                                            <svg width="1.25em" height="1.25em" viewBox="0 0 16 16" class="m-1 bi bi-exclamation-circle-fill" fill="red" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                                            </svg>
+                                        </div>
+                                        <div class="message-container" style="margin-left: 10px;">
+                                            <strong style="color: red; font-size: small; font-family: cursive">' .
+                                                        $error . '</strong>
+                                        </div>
+                                    </div>';
+                            }
                         }
                         ?>
                     </div>
+
                 </div>
 
                 <div>

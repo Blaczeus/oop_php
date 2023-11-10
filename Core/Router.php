@@ -2,11 +2,10 @@
 
 namespace Core;
 
-use Core\Middleware\Guest;
-use Core\Middleware\Auth;
 use Core\Middleware\Middleware;
+use Core\Response;
 class Router {
-    public $routes = [];
+        public $routes = [];
 
     public function add($path, $controller, $method, $middleware = null)
     {
@@ -45,6 +44,11 @@ class Router {
         return $this;
     }
 
+    public function previousUrl() 
+    {
+        return $_SERVER['HTTP_REFERER'];
+    }
+
     public function route($path, $method)
     {
         foreach ($this->routes as $route)
@@ -57,7 +61,7 @@ class Router {
                 return require base_path('Http/controllers/'.$route['controller']);
             }
         }
-        abort(Response::PAGE_NOT_FOUND);
+        abortAction(Response::PAGE_NOT_FOUND);
     }
 
 }

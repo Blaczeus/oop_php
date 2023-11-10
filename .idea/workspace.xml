@@ -5,54 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f53b5506-ba19-4a0c-a9a0-f8d486a30f2b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Core/Authenticator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Middleware/Auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Middleware/Guest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Middleware/Middleware.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Http/Forms/LoginForm.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Http/controllers/about.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Http/controllers/authentication/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Http/controllers/authentication/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Http/controllers/authentication/signout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Http/controllers/contact.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Http/controllers/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Http/controllers/notes/create.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Http/controllers/notes/destroy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Http/controllers/notes/edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Http/controllers/notes/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Http/controllers/notes/show.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Http/controllers/notes/store.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Http/controllers/notes/update.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Http/controllers/profile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Http/controllers/registration/create.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Http/controllers/registration/store.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/authentication/login.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/registration/create.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Authenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Authenticator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Router.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Validator.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Validator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/about.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/contact.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/notes/create.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/notes/destroy.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/notes/edit.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/notes/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/notes/show.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/notes/store.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/notes/update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/profile.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/error.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Http/Forms/LoginForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/Http/Forms/LoginForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Http/controllers/authentication/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/Http/controllers/authentication/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Http/controllers/authentication/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Http/controllers/authentication/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Http/controllers/registration/store.php" beforeDir="false" afterPath="$PROJECT_DIR$/Http/controllers/registration/store.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/error.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/error.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/notes/create.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/notes/create.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/notes/index.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/notes/index.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/templates/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/templates/nav.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/authentication/login.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/authentication/login.view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,6 +212,7 @@
       <workItem from="1697817089263" duration="1495000" />
       <workItem from="1697907579916" duration="127000" />
       <workItem from="1698683928613" duration="22000" />
+      <workItem from="1699610916861" duration="381000" />
     </task>
     <task id="LOCAL-00001" summary="Production Base">
       <option name="closed" value="true" />

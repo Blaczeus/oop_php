@@ -49,7 +49,7 @@ class Database
         $result = $this->find();
 
         if (!($result)) {
-            abort(Response::PAGE_NOT_FOUND);
+            abortAction(Response::PAGE_NOT_FOUND);
         }
 
         return $result;
@@ -60,7 +60,7 @@ class Database
         $result = $this->findAll();
 
         if (!($result)) {
-            abort(Response::PAGE_NOT_FOUND);
+            abortAction(Response::PAGE_NOT_FOUND);
         }
 
         return $result;

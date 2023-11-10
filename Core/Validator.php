@@ -48,8 +48,12 @@ class Validator
     {
         $value = trim($value);
 
+        $regex = '/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/';
+
         if (empty($value) && strlen($value) < 1) {
             $errors['email'] = "Please provide an email address";
+        }elseif (!preg_match($regex, $value)) {
+            $errors['email'] = "Invalid {$fieldName} format";
         }elseif (!filter_var($value, FILTER_VALIDATE_EMAIL)) {
             $errors['email'] = "Invalid {$fieldName} format";
         }
@@ -57,9 +61,10 @@ class Validator
         return $value;
     }
 
-    public static function password($value, $email, &$errors, $minLength =7, $fieldName = 'password'): string
+    public static function password($value, $email, &$errors, $minLength = 7, $fieldName = 'password'): string
     {
         $value = trim($value);
+
         if (empty($value)) {
             $errors['password'] = "A {$fieldName} is required!";
         } elseif (strlen($value) < $minLength) {
@@ -67,14 +72,24 @@ class Validator
         } else {
             $emailParts = explode('@', $email);
             $username = $emailParts[0];
+
             if (stripos($value, $username) !== false) {
                 $errors['password'] = "The {$fieldName} cannot contain your email username";
+            } elseif (!preg_match('/[A-Z]/', $value)) {
+                $errors['password'] = "The {$fieldName} must contain at least one uppercase letter";
+            } elseif (!preg_match('/[a-z]/', $value)) {
+                $errors['password'] = "The {$fieldName} must contain at least one lowercase letter";
+            } elseif (!preg_match('/[0-9]/', $value)) {
+                $errors['password'] = "The {$fieldName} must contain at least one number";
+            } elseif (!preg_match('/[^A-Za-z0-9]/', $value)) {
+                $errors['password'] = "The {$fieldName} must contain at least one special character";
             }
         }
+
         return $value;
     }
 
-    public static function checkEmail($email)
+    public static function emailExists($email)
     {
         /** @var Database $db */
         $db = App::resolve(Database::class);
@@ -84,7 +99,7 @@ class Validator
         return (bool)$db->query($sql, $params)->find();
     }
 
-    public static function checkUsername($username)
+    public static function usernameExists($username)
     {
         /** @var Database $db */
         $db = App::resolve(Database::class);

@@ -1,5 +1,7 @@
 <?php
+use Core\Router;
 use Core\Session;
+use Core\ValidationException;
 
 session_start();
 
@@ -17,12 +19,20 @@ spl_autoload_register(function ($class) {
 require base_path('bootstrap.php');
 
 $router = new Core\Router();
-
 $routes = require base_path('routes.php');
+
 
 $path = parse_url($_SERVER['REQUEST_URI'])['path'];
 $method = $_POST['_method'] ?? $_SERVER['REQUEST_METHOD'];
 
-$router->route($path, $method);
+
+try {
+    $router->route($path, $method);
+} catch (ValidationException $exception) {
+    Session::flash('errors', $exception->errors);
+    Session::flash('old', $exception->old);
+
+    return redirect($router->previousUrl());
+}
 
 Session::unflash();

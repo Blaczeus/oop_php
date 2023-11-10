@@ -23,8 +23,8 @@ if (isset($_POST['register'])) {
     // dd($errors);
 
     $db = App::resolve(Database::class);
-    $usernameExists = Validator::checkUsername($username);
-    $emailExists = Validator::checkEmail($email);
+    $usernameExists = Validator::usernameExists($username);
+    $emailExists = Validator::emailExists($email);
 
     if ($usernameExists) {
         $errors['username'] = "A user with that username already exists";

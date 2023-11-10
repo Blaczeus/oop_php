@@ -2,12 +2,11 @@
 
 namespace Http\Forms;
 
-use Core\Validator;
+use Core\ValidationException;
 
 class LoginForm
 {
     
-    protected $data = [];
     protected $errors = [];
 
     public function getErrors(): array
@@ -18,38 +17,39 @@ class LoginForm
     public function setError($field, $message)
     {
         $this->errors[$field] = $message;
-    }
-    
-	public function getData() {
-		return $this->data;
-	}
 
-    public function validate($username, $password)
+        return $this;
+    }
+
+    public function __construct(public array $attributes)
     {
-        if (empty($username) || strlen($username) < 1) {
+        if (empty($attributes['username']) || strlen($attributes['username']) < 1) {
             $this->errors['username'] = 'Please provide a valid username';
         }
 
-        if (!preg_match("/^[a-zA-Z0-9_-]{3,16}$/", $username)) {
-            $this->errors['username'] = 'Invalid username format';
+        if (!preg_match("/^[a-zA-Z0-9_-]{3,16}$/", $attributes['username'])) {
+            $this->errors['username'] = 'Invalid username format';  
         }
 
-        if (empty($password) || strlen($password) < 1) {
+        if (empty($attributes['password']) || strlen($attributes['password']) < 1) {
             $this->errors['password'] = 'Please provide a valid password';
         }
+    }
 
-        $dbrow = Validator::checkUsername($username);
-        if ($dbrow === false){
-            //No username in the database, return an error
-            $this->errors['authentication'] = 'Credentials don\'t match';
-        }else {
-            $this->data = [
-                'username' => $username,
-                'password' => $password,
-                'dbrow' => $dbrow
-            ];
-        }
-        return empty($this->errors);
+    public static function validate($attributes)
+    {
+        $instance = new static($attributes);
+        return $instance->failed() ? $instance->throw() : $instance;
+    }
+
+    public function throw()
+    {
+        ValidationException::throw($this->errors, $this->attributes);
+    }
+
+    public function failed()
+    {
+        return count($this->errors);
     }
 
 }
